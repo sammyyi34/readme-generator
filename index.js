@@ -35,7 +35,7 @@ const questions = [
     name: 'License',
     message: 'Please select which license you would like to use.',
     choices: ['MIT License', 'Apache License 2.0', 'GNU General Public License v3.0']
-  }
+  },
   {
     type: 'input',
     name: 'Contributing',
@@ -78,7 +78,7 @@ function writeToFile(fileName, data) {
 
 // TODO: Create a function to initialize app
 function init() {
-  inquirer.createPromptModule(questions)
+  inquirer.prompt(questions)
   .then(function(data) {
     writeToFile("README.md", generateMarkdown(data));
     console.log(data);
