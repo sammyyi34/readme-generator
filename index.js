@@ -18,12 +18,12 @@ const questions = [
   {
     type: 'input',
     name: 'Table of Contents',
-    message: 'Provide a table of contents for your project.'
+    message: 'Table of Contents (press enter to continue)'
   },
   {
     type: 'input',
     name: 'Installation',
-    message: 'If your project requires installation please explain the installation process.'
+    message: 'If your project requires installation please explain the installation process. If there are none leave blank.'
   },
   {
     type: 'input',
